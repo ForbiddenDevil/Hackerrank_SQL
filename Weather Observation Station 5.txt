@@ -1,0 +1,11 @@
+SELECT * FROM(
+    SELECT city, length(city) FROM STATION
+    ORDER BY length(city), city
+) AS T
+LIMIT 1;
+
+SELECT * FROM(
+    SELECT city, length(city) FROM STATION
+    ORDER BY length(city) DESC, city
+) AS T
+LIMIT 1;
